@@ -1,0 +1,45 @@
+.project-card-img {
+  /* background-position: center; */
+  object-fit: cover;
+  flex-basis: 200px;
+  min-width: 0;
+  min-height: 0;
+  background: rgb(31, 31, 31);
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1em;
+}
+
+.project-heading {
+  font-size: 4rem;
+  margin-bottom: 0.1em;
+}
+
+@media (min-width: 600px) {
+  .project-card-container {
+    flex-direction: row-reverse;
+  }
+
+  .project-card-img {
+    /* min-height: 300px; */
+    flex-basis: 300px;
+  }
+
+  .project-card-content-container {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card-footer {
+    margin-top: auto;
+  }
+
+  .btn-project-card {
+    width: initial;
+  }
+}

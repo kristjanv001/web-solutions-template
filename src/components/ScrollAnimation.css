@@ -1,0 +1,29 @@
+.scroll-animation {
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  animation: move 1.4s infinite;
+  -webkit-animation: move 1.4s infinite;
+  z-index: 2;
+  display: none;
+}
+
+@keyframes move {
+  from {
+    top: 0px;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+}
+
+@media (min-width: 600px) {
+  .scroll-animation {
+    display: block;
+  }
+}
